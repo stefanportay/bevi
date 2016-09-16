@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby "2.3.0"
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'puma', '~> 3.0'
@@ -8,7 +7,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'pg'
+
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
@@ -23,11 +22,12 @@ gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3'
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
 end
 
 group :production do
+     gem 'pg'
      gem 'rails_12factor'
 end
 
