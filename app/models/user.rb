@@ -8,4 +8,5 @@ class User < ApplicationRecord
                      :on => :create,
                      :format => {:with => /\A.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\@\#\$\%\^\&\+\=]).*\Z/ } 
 
+    has_many :pins
 end
